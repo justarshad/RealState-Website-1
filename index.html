@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <title>RealState</title>
+</head>
+
+<body>
+    <section id="home">
+        <header>
+            <div>
+                <span class="logo">LegoState</span>
+                <nav>
+                    <a href="#">properties</a>
+                    <a href="#">buyers</a>
+                    <a href="#">sellers</a>
+                    <a href="#">valuation</a>
+                    <a href="#">contact</a>
+                </nav>
+            </div>
+            <div>
+                <span>
+                    <ion-icon name="person-add-outline"></ion-icon> Sign In
+                </span>
+                <span>
+                    <ion-icon name="menu" id="menuBtn"></ion-icon>
+                </span>
+            </div>
+        </header>
+        <div class="res-header">
+            <a href="#">properties</a>
+            <a href="#">buyers</a>
+            <a href="#">sellers</a>
+            <a href="#">valuation</a>
+            <a href="#">contact</a>
+        </div>
+        <h1 class="mainHeading">
+            Sell or Rent your home at the best price
+        </h1>
+        <div class="searchArea">
+            <div class="searchBox">
+                <div class="slectFeilds">
+                    <div class="input">
+                        Sale <ion-icon name="chevron-down"></ion-icon>
+                    </div>
+                </div>
+                <div class="slectFeilds">
+                    <div class="input">
+                        <ion-icon name="home-outline"></ion-icon>
+                        Property Type
+                        <ion-icon name="chevron-down"></ion-icon>
+                    </div>
+                </div>
+                <div class="slectFeilds">
+                    <div class="input">
+                        <ion-icon name="search"></ion-icon>
+                        <input type="text" name="" id="" placeholder="Search by location or Property ID..">
+
+                    </div>
+                </div>
+
+                <button>Search</button>
+            </div>
+            <div class="checkedBoxes">
+                <input type="radio" name="searchCheckedBox" id="searchCheckedBox1" checked>
+                <label for="searchCheckedBox1"><span>
+                    </span>Only properties in exclusive represantion</label>
+                <input type="radio" name="searchCheckedBox" id="searchCheckedBox2">
+                <label for="searchCheckedBox2"><span>
+                    </span>Only new devlopments</label>
+            </div>
+        </div>
+
+    </section>
+    <section id="bioData">
+        <div class="main">
+            <div class="box">
+                <div class="first">
+                    <img src="./icons/icons8-home-48.png" alt="">
+                    <h2 class="heading">Latest Properties for Sale.</h2>
+                </div>
+                <div class="second">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia laudantium ab quis eveniet
+                        rerum, debitis quos culpa laborum vitae accusamus soluta.</p>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+        </div>
+    </section>
+    <section id="property">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./Images/property-1.jpg" alt="">
+                    <div class="one">
+                        <h3 class="price">340,000 USD</h3>
+                        <p class="addres">03, Near main streat - New York 045821</p>
+                    </div>
+                    <hr>
+                    <div class="two">
+                        <div>
+                            <span>
+                                <ion-icon name="bed"></ion-icon> 3
+                            </span>
+                            <span>Bedroom</span>
+                        </div>
+                        <div>
+                            <span>
+                                <ion-icon name="rainy"></ion-icon> 4
+                            </span>
+                            <span>Bathroom</span>
+                        </div>
+                        <div>
+                            <span>
+                                <ion-icon name="cube"></ion-icon> 1300 S Meter
+                            </span>
+                            <span>Total Area</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./Images/property-2.jpg" alt="">
+                    <div class="one">
+                        <h3 class="price">410,000 USD</h3>
+                        <p class="addres">04, Near main streat - New York 045821</p>
+                    </div>
+                    <hr>
+                    <div class="two">
+                        <div>
+                            <span>
+                                <ion-icon name="bed"></ion-icon> 4
+                            </span>
+                            <span>Bedroom</span>
+                        </div>
+                        <div>
+                            <span>
+                                <ion-icon name="rainy"></ion-icon> 4
+                            </span>
+                            <span>Bathroom</span>
+                        </div>
+                        <div>
+                            <span>
+                                <ion-icon name="cube"></ion-icon> 1600 S Meter
+                            </span>
+                            <span>Total Area</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./Images/property-3.jpg" alt="">
+                    <div class="one">
+                        <h3 class="price">290,000 USD</h3>
+                        <p class="addres">09, Near main streat - New York 045821</p>
+                    </div>
+                    <hr>
+                    <div class="two">
+                        <div>
+                            <span>
+                                <ion-icon name="bed"></ion-icon>2
+                            </span>
+                            <span>Bedroom</span>
+                        </div>
+                        <div>
+                            <span>
+                                <ion-icon name="rainy"></ion-icon> 2
+                            </span>
+                            <span>Bathroom</span>
+                        </div>
+                        <div>
+                            <span>
+                                <ion-icon name="cube"></ion-icon> 893 S Meter
+                            </span>
+                            <span>Total Area</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./Images/property-4.jpg" alt="">
+                    <div class="one">
+                        <h3 class="price">340,000 USD</h3>
+                        <p class="addres">03, Near main streat - New York 045821</p>
+                    </div>
+                    <hr>
+                    <div class="two">
+                        <div>
+                            <span>
+                                <ion-icon name="bed"></ion-icon> 3
+                            </span>
+                            <span>Bedroom</span>
+                        </div>
+                        <div>
+                            <span>
+                                <ion-icon name="rainy"></ion-icon> 4
+                            </span>
+                            <span>Bathroom</span>
+                        </div>
+                        <div>
+                            <span>
+                                <ion-icon name="cube"></ion-icon> 1300 S Meter
+                            </span>
+                            <span>Total Area</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./Images/property-5.jpg" alt="">
+                    <div class="one">
+                        <h3 class="price">410,000 USD</h3>
+                        <p class="addres">04, Near main streat - New York 045821</p>
+                    </div>
+                    <hr>
+                    <div class="two">
+                        <div>
+                            <span>
+                                <ion-icon name="bed"></ion-icon> 4
+                            </span>
+                            <span>Bedroom</span>
+                        </div>
+                        <div>
+                            <span>
+                                <ion-icon name="rainy"></ion-icon> 4
+                            </span>
+                            <span>Bathroom</span>
+                        </div>
+                        <div>
+                            <span>
+                                <ion-icon name="cube"></ion-icon> 1600 S Meter
+                            </span>
+                            <span>Total Area</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./Images/property-6.jpg" alt="">
+                    <div class="one">
+                        <h3 class="price">290,000 USD</h3>
+                        <p class="addres">09, Near main streat - New York 045821</p>
+                    </div>
+                    <hr>
+                    <div class="two">
+                        <div>
+                            <span>
+                                <ion-icon name="bed"></ion-icon>2
+                            </span>
+                            <span>Bedroom</span>
+                        </div>
+                        <div>
+                            <span>
+                                <ion-icon name="rainy"></ion-icon> 2
+                            </span>
+                            <span>Bathroom</span>
+                        </div>
+                        <div>
+                            <span>
+                                <ion-icon name="cube"></ion-icon> 893 S Meter
+                            </span>
+                            <span>Total Area</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="rabiso">
+        <div class="box first">
+            <img src="./Images/rebisto.jpg" alt="">
+        </div>
+        <div class="box second">
+            <h2 class="heading">
+                Let's meet Rebisto!
+            </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea asperiores ut fugit quidem officiis deserunt
+                sint, perspiciatis doloribus unde illo fuga mollitia odit harum quas ad ipsum assumenda moles!</p>
+            <div class="heightLight">
+                <div>
+                    <ion-icon name="cube"></ion-icon>
+                    <span>
+                        <h3>
+                            1000 Squire Metre
+                        </h3>
+                        <p>Living Area</p>
+                    </span>
+                </div>
+                <div>
+                    <ion-icon name="bed"></ion-icon>
+                    <span>
+                        <h3>
+                            8 Bedroom
+                        </h3>
+                        <p>Automatic</p>
+                    </span>
+                </div>
+            </div>
+            <a href="">see more details <ion-icon name="arrow-forward"></ion-icon></a>
+        </div>
+    </section>
+    <section id="last">
+        <div class="box">
+            <ion-icon name="home"></ion-icon>
+            <h4>for buyers</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo fugit quo ipsum assumenda fugiat.</p>
+        </div>
+        <div class="box">
+            <ion-icon name="cash"></ion-icon>
+            <h4>for sellers</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo fugit quo ipsum assumenda fugiat.</p>
+        </div>
+        <div class="box">
+            <ion-icon name="rocket"></ion-icon>
+            <h4>for investers</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo fugit quo ipsum assumenda fugiat.</p>
+        </div>
+        <div class="box">
+            <ion-icon name="bar-chart"></ion-icon>
+            <h4>for traders</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo fugit quo ipsum assumenda fugiat.</p>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                120: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            },
+        });
+        let menuBtn = document.getElementById('menuBtn');
+
+        menuBtn.addEventListener('click', () => {
+            let resHeader = document.querySelector('.res-header');
+            resHeader.classList.toggle('active');
+
+            if (resHeader.classList.contains('active')) {
+                menuBtn.setAttribute('name', 'close');
+            }
+            else {
+                menuBtn.setAttribute('name', 'menu');
+            }
+        })
+
+
+        const boxHeight = document.querySelector('.box').offsetHeight;
+        let mainBox = document.querySelector('#bioData .main');
+        console.log(boxHeight);
+        // mainBox.style.height = `${boxHeight}px`;
+    </script>
+</body>
+
+</html>

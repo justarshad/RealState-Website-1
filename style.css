@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primaryColor: #446df3;
+    --primaryColorHoverd: #5679ed;
+    --pureBlack: #000000;
+    --gray: #4e4e4e;
+    --lightestGray: #d1d1d1;
+    --white: #f6f6f6;
+    --PureWhite: #ffffff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fcf8f8;
+}
+
+section {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    margin: 2rem 0;
+}
+
+button {
+    background: var(--primaryColor);
+    color: var(--white);
+    padding: .6em 1.4em;
+    border-radius: 0.2em;
+    border: none;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: var(--primaryColorHoverd);
+
+}
+
+a {
+    margin: 0 .5em;
+    color: var(--gray);
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --------------------------------------------------- */
+
+.res-header {
+    opacity: 0;
+    display: flex;
+    max-height: 0;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.res-header a {
+    margin: .2em 0;
+}
+
+#home {
+    font-size: 1rem;
+    background-image: url(./Images/home-main.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 8em;
+    max-height: fit-content;
+    margin: 0;
+}
+
+#home header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+}
+
+#home header>div {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+#home header div .logo {
+    font-size: 2.3em;
+    color: var(--pureBlack);
+    font-weight: 500;
+}
+
+#home header div nav {
+    margin: 0 3em;
+    display: inline;
+}
+
+
+#home header div span {
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    color: var(--gray);
+}
+
+#home header div span ion-icon {
+    font-size: 1.4em;
+    margin: 0 0.3em;
+}
+
+#home header div span ion-icon[name=menu] {
+    display: none;
+}
+
+#home .mainHeading {
+    font-size: 2.8em;
+    margin: 1.2em 0;
+    max-width: 30%;
+}
+
+#home .searchArea {
+    display: inline-block;
+}
+
+#home .searchArea .searchBox {
+    display: flex;
+    background-color: var(--white);
+    padding: 1.2em .8em;
+    border-radius: .4em;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+
+#home .searchArea .searchBox .slectFeilds {
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    min-width: 4.5em;
+    max-width: max-content;
+}
+
+#home .searchArea .searchBox .slectFeilds .input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#home .searchArea .searchBox .slectFeilds .input :is(ion-icon[name=home-outline], ion-icon[name=search]) {
+    color: var(--primaryColor);
+    transform: scale(1.3);
+    margin: 0 .5em;
+}
+
+#home .searchArea .searchBox .slectFeilds .input input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 .3em;
+    min-width: 16em;
+    font-size: 1em;
+}
+
+#home .searchArea .searchBox .slectFeilds .input ion-icon {
+    padding: 0 0.4em;
+}
+
+#home .searchArea .checkedBoxes {
+    margin: 1.4em 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.2em;
+}
+
+#home .searchArea .checkedBoxes input[type=radio] {
+    display: none;
+}
+
+#home .searchArea .checkedBoxes input:checked+label span {
+    background-color: var(--primaryColor);
+    border: .2em solid var(--white);
+    outline: .2em solid var(--primaryColor);
+}
+
+#home .searchArea .checkedBoxes label {
+    display: flex;
+    align-items: center;
+}
+
+#home .searchArea .checkedBoxes label span {
+    display: inline-block;
+    min-height: 1em;
+    min-width: 1em;
+    border-radius: .1em;
+    background: var(--white);
+    margin: 0 0.6em;
+    padding: 0.1em;
+}
+
+#bioData {
+    font-size: 1rem;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#bioData .main {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    overflow: hidden;
+    padding: 1em;
+}
+
+#bioData .main .box {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+}
+
+#bioData .main .box .first {
+    border-right: .1em solid var(--lightestGray);
+    display: flex;
+    align-items: center;
+}
+
+#bioData .main .box .first img {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    border: .4em solid transparent;
+    box-shadow: 0 0 .6em .3em var(--lightestGray);
+}
+
+#bioData .main .box .first h2 {
+    padding: 0 1.6em 0 1em;
+}
+
+#bioData .main .box .second {
+    padding: 0 .8em;
+    margin: auto 0;
+}
+
+#bioData .buttons {
+    display: flex;
+    gap: .8em;
+
+}
+
+#bioData .buttons ion-icon {
+    font-size: 1.2em;
+    border-radius: 50%;
+    background: var(--PureWhite);
+    padding: 0.4em;
+    box-shadow: 0 0 .4em #eae9e9;
+}
+
+#property {
+    font-size: 1rem;
+    margin: 2rem 0;
+}
+
+#property .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 0.4em;
+    background: var(--PureWhite);
+}
+
+#property .swiper-slide img {
+    width: 100%;
+    border-radius: 0.4em;
+}
+
+#property .swiper-slide :is(.one, .two) {
+    padding: 1.7em .8em;
+}
+
+
+#property .swiper-slide .one .price {
+    font-size: 1.1em;
+}
+
+#property .swiper-slide .one .addres {
+    font-size: .85em;
+    color: var(--gray);
+}
+
+#property .swiper-slide hr {
+    width: 100%;
+    height: .1rem;
+    background: var(--lightestGray);
+    border: none;
+}
+
+#property .swiper-slide .two {
+    display: flex;
+    gap: 1.5em;
+}
+
+#property .swiper-slide .two div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: .4em;
+}
+
+#property .swiper-slide .two div span {
+    display: flex;
+    gap: .2em;
+    align-items: center;
+    color: var(--pureBlack);
+    font-size: 1.1em;
+}
+
+#rabiso {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 6em;
+}
+
+#rabiso .first img {
+    border-radius: 0.4em;
+}
+
+#rabiso .second {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#rabiso .second .heading {
+    font-size: 3.2em;
+}
+
+#rabiso .second p {
+    line-height: 1.6;
+    color: var(--gray);
+    margin: .4em 0 1em 0;
+}
+
+#rabiso .second .heightLight {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2em;
+    margin: 1em;
+}
+
+#rabiso .second .heightLight>div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1em;
+}
+
+#rabiso .second .heightLight>div ion-icon {
+    font-size: 1.8em;
+    padding: .3em;
+    border-radius: 50%;
+    box-shadow: 0 0 0.6em 0.1em var(--lightestGray);
+}
+
+#rabiso .second .heightLight>div span h3 {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--pureBlack);
+}
+
+#rabiso .second .heightLight>div span p {
+    font-size: 0.8em;
+    color: var(--gray);
+}
+
+#rabiso .second a {
+    color: var(--primaryColor);
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+}
+
+#rabiso .second a ion-icon {
+    margin-left: .4em;
+    transition: all 0.2s ease;
+}
+
+#rabiso .second a:hover ion-icon {
+    margin-left: 1.4em;
+    transform: scale(1.4);
+}
+
+#last {
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+    gap: 2em;
+}
+
+#last .box {
+    padding: 1.2em;
+    border-radius: .4em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: .8em;
+    text-align: center;
+}
+
+#last .box ion-icon {
+    color: var(--primaryColor);
+    font-size: 3.2em;
+    margin: .4em 0;
+}
+
+#last .box h4 {
+    font-size: 1.4em;
+    color: var(--pureBlack);
+
+}
+
+#last .box p {
+    font-size: 0.92em;
+    color: var(--gray);
+    line-height: 1.5;
+}
+
+#last .box:hover {
+    box-shadow: 0 0 1em var(--lightestGray);
+}
+
+/* ------------------ */
+
+@media (max-width:1080px) {
+    section {
+        padding: 0 2.8rem;
+    }
+    #home header div nav {
+        display: none;
+    }
+
+    #home header div span ion-icon[name=menu] {
+        display: inline;
+    }
+
+    .res-header.active {
+        opacity: 1;
+        max-height: fit-content;
+    }
+}
+
+@media (max-width:992px) {
+    section {
+        padding: 0 2.4rem;
+    }
+}
+
+@media (max-width:768px) {
+    section {
+        padding: 0 2rem;
+    }
+
+    #home .mainHeading {
+        font-size: 2.8em;
+        margin: 1.2em 0;
+        max-width: 100%;
+    }
+
+    #bioData .main .box {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    #bioData .main .box .first {
+        border: none;
+    }
+
+    #rabiso {
+        flex-direction: column;
+    }
+
+    #rabiso .first {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width:576px) {
+    section {
+        padding: 0 1rem;
+    }
+}
