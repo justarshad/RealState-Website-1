@@ -15,6 +15,12 @@
     --lightestGray: #d1d1d1;
     --white: #f6f6f6;
     --PureWhite: #ffffff;
+    --lightGraiesWhite:#f3e6e6;
+
+    --PrimaryYellow:#e4e140;
+    --PrimaryBlue:#446df3;
+    --PrimaryBlack:#080808;
+    --PrimaryRed:#cc2f2f;
 }
 
 body {
@@ -463,6 +469,79 @@ a {
     box-shadow: 0 0 1em var(--lightestGray);
 }
 
+#footer {
+    font-size: 1rem;
+    background: var(--lightGraiesWhite);
+    padding-top: 2em;
+    padding-bottom: 5em;
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+}
+
+
+#footer .mainData {
+    max-width: 30%;
+}
+
+#footer .mainData span {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+#footer .mainData h3 {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 0.5em 0;
+}
+
+#footer .mainData .socialIcons ion-icon {
+    font-size: 1.4em;
+    padding: .5em;
+    border-radius: 50%;
+    color: var(--PureWhite);
+    margin: .5em;
+}
+
+#footer .mainData .socialIcons ion-icon:nth-child(1) {
+    background: var(--PrimaryRed);
+}
+
+#footer .mainData .socialIcons ion-icon:nth-child(2) {
+    background: var(--PrimaryBlack);
+}
+
+#footer .mainData .socialIcons ion-icon:nth-child(3) {
+    background: var(--PrimaryBlue);
+}
+
+#footer .mainData .socialIcons ion-icon:nth-child(4) {
+    background: var(--PrimaryYellow);
+}
+
+#footer .footerData {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:2em;
+}
+
+#footer .footerData div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#footer .footerData div h4 {
+    margin: 0.4em 0;
+    font-size: 1.4em;
+}
+
+#footer .footerData div a {
+    margin: 0.2em 0;
+}
+#footer .footerData div a:hover {
+    color:var(--darkGray);
+}
 /* ------------------ */
 
 @media (max-width:1080px) {
@@ -493,6 +572,10 @@ a {
         max-width: 100%;
         text-align: center;
     }
+    #footer {
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 
 @media (max-width:768px) {
@@ -518,10 +601,28 @@ a {
         display: flex;
         justify-content: center;
     }
+    #footer {
+    font-size: .9rem;
+    }
+    #footer .mainData {
+        max-width: 60%;
+    }
 }
 
 @media (max-width:576px) {
     section {
         padding: 0 1rem;
+    }
+    #footer .footerData {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #footer .mainData {
+        max-width: 90%;
+    }
+}
+@media (max-width:410px) {
+    #footer .mainData {
+        max-width: 100%;
     }
 }
