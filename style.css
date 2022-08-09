@@ -11,6 +11,7 @@
     --primaryColorHoverd: #5679ed;
     --pureBlack: #000000;
     --gray: #4e4e4e;
+    --darkGray: #151515;
     --lightestGray: #d1d1d1;
     --white: #f6f6f6;
     --PureWhite: #ffffff;
@@ -39,7 +40,6 @@ button {
 
 button:hover {
     background: var(--primaryColorHoverd);
-
 }
 
 a {
@@ -72,11 +72,17 @@ a {
 
 .res-header a {
     margin: .2em 0;
+    letter-spacing:0.06em;
+    text-transform:capitalize;
+}
+.res-header a:hover {
+    color:var(--darkGray);
+    letter-spacing:0.08em;
 }
 
 #home {
     font-size: 1rem;
-    background-image: url(./Images/home-main.jpg);
+    background-image: linear-gradient(#ababab80, #ababab80) , url(./Images/home-main.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -108,6 +114,13 @@ a {
     margin: 0 3em;
     display: inline;
 }
+#home header div nav a{
+    letter-spacing:0.06em;
+    text-transform:capitalize;
+}
+#home header div nav a:hover{
+    color:var(--darkGray);
+}
 
 
 #home header div span {
@@ -134,6 +147,7 @@ a {
 
 #home .searchArea {
     display: inline-block;
+    transition: all 0.3s ease;
 }
 
 #home .searchArea .searchBox {
@@ -261,7 +275,6 @@ a {
 #bioData .buttons {
     display: flex;
     gap: .8em;
-
 }
 
 #bioData .buttons ion-icon {
@@ -328,7 +341,7 @@ a {
     gap: .2em;
     align-items: center;
     color: var(--pureBlack);
-    font-size: 1.1em;
+    font-size: .95em;
 }
 
 #rabiso {
@@ -378,6 +391,9 @@ a {
     padding: .3em;
     border-radius: 50%;
     box-shadow: 0 0 0.6em 0.1em var(--lightestGray);
+}
+#rabiso .second .heightLight>div:hover ion-icon {
+    box-shadow: 0 0 0.7em 0.2em var(--lightestGray);
 }
 
 #rabiso .second .heightLight>div span h3 {
@@ -435,7 +451,6 @@ a {
 #last .box h4 {
     font-size: 1.4em;
     color: var(--pureBlack);
-
 }
 
 #last .box p {
@@ -472,17 +487,17 @@ a {
     section {
         padding: 0 2.4rem;
     }
+    #home .mainHeading {
+        font-size: 2.8em;
+        margin: 1.2em 0;
+        max-width: 100%;
+        text-align: center;
+    }
 }
 
 @media (max-width:768px) {
     section {
         padding: 0 2rem;
-    }
-
-    #home .mainHeading {
-        font-size: 2.8em;
-        margin: 1.2em 0;
-        max-width: 100%;
     }
 
     #bioData .main .box {
